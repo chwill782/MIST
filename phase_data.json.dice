@@ -1,0 +1,1 @@
+<%= (!(configured.phase_data).nil? && File.exist?(configured.phase_data)) ? IO.read(configured.phase_data) : (configured.phase_data || {}) %>

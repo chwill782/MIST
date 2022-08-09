@@ -1,0 +1,1 @@
+<%= (!(configured.indication_data).nil? && File.exist?(configured.indication_data)) ? IO.read(configured.indication_data) : (configured.indication_data || {}) %>
